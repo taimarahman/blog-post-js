@@ -5,17 +5,17 @@
     "image" : "img1.jpg"
 }, {
     "id" : 2,
-    "title" : "We create a modern beutiful photo",
+    "title" : "Capturing Your Attention With Colour",
     "date" : "2021-03-23",
     "image" : "img2.jpg"
 }, {
     "id" : 3,
-    "title" : "We create a modern beutiful photo",
+    "title" : "All You Ever Wanted To Know About Corals",
     "date" : "2021-05-09",
     "image" : "img3.jpg"
 }, {
     "id" : 4,
-    "title" : "We create a modern beutiful photo",
+    "title" : "Where the Mountains Touch the Sky",
     "date" : "2021-09-02",
     "image" : "img4.jpg"
 }]

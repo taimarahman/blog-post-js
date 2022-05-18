@@ -19,43 +19,51 @@
             <div class="nav-right">
                 <a href="#">My account</a>
                 <a href="#">My cart</a>
-                <button class="btn search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" id="search" placeholder="Search...">
+                <button class="btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </nav>
     </header>
-    <section>
-        <div class="navigation">
-            <p value="1">01</p>
-            <p value="2">02</p>
-            <p value="3">03</p>
-            <p value="4">04</p>
-        </div>
-        <div class="post-container">
-            <div class="post" id="post1">
-                <p><span class="date">20 January 2022</span><span class="dot"></span>Blog</p>
-                <h1 class="post-title">We create a modern beutiful photo</h1>
-                <div class="post-image"><img src="images/img1.jpg"></div>
+    <div class="container">
+        <section>
+            <div class="main-container">
+                <div class="navigation">
+                    <p value="1" class="active">01</p>
+                    <p value="2">02</p>
+                    <p value="3">03</p>
+                    <p value="4">04</p>
+                </div>
+                <div class="post-container">
+                    <!-- <div class="post active" id="post1">
+                        <p><span class="date">20 January 2022</span><span class="dot"></span>Blog</p>
+                        <h1 class="post-title">We create a modern beutiful photo</h1>
+                        <div class="post-image"><img src="images/img1.jpg"></div>
+                    </div> -->
+
+                <!--  -->
+                </div>
             </div>
-        </div>
-        <div class="social">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </section>
-    <aside>
-        <div class="wrapper">
-            <span class="dot"></span>
-            <div>
-                <h3>Air drone</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod odio et deleniti, amet quos aspernatur aperiam deserunt vel laborum quae, similique mollitia saepe? Distinctio a cum quos impedit iure repellendus.</p>
-            </div>
-            <div>
-                <h3>Knowledge</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt quisquam autem. Natus explicabo, dignissimos ad consectetur sint suscipit voluptatum?</p>
-            </div>
-        </div>
-    </aside>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>            
+        </section>
+        <aside>
+            <div class="wrapper">
+                <span class="dot"></span>
+                <div>
+                    <h3>Air drone</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod odio et deleniti, amet quos aspernatur aperiam deserunt vel laborum quae, similique mollitia saepe?</p>
+                </div>
+                <div>
+                    <h3>Knowledge</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt quisquam autem.</p>
+                </div>
+            </div>            
+            <div class="inquiry">Send your inquiry</div>
+        </aside>  
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
