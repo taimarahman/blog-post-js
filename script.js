@@ -3,10 +3,8 @@ const searchEl = document.getElementById('search');
 const navigationEl = document.querySelector('.navigation');
 const postContainer = document.querySelector('.post-container');
 
-// console.log(navigationEl.querySelector('.active'));
 
 Array.from(navigationEl.children).forEach(el => {
-    // console.log(el);
     el.setAttribute('onclick', 'displayPost(this)');
 });
 
@@ -63,20 +61,19 @@ function displayPost(el, postID='') {
 
     if(postID == '') {
         postID = `post${el.getAttribute('value')}`; 
-        console.log(postID);
+        // console.log(postID);
     }
     
     let currentActivePost = getSelectorPost('.active');
-    console.log(currentActivePost);
+    // console.log(currentActivePost);
     currentActivePost.classList.remove('active');
     document.getElementById(postID).classList.add('active');
 };
 
 function getBlogDetails(el) {
     postID = el.parentNode.getAttribute('id');
-    console.log(postID);
+    // console.log(postID);
     navID = postID.slice(-1);
-    console.log(navID);
 
     Array.from(navigationEl.children).every(child => {
         if(child.getAttribute('value') == navID) {
@@ -90,22 +87,17 @@ function getBlogDetails(el) {
 }
 
 function searchPost() {
-    console.log(searchEl.value);
     let keyWord = searchEl.value;
 
     if(keyWord.trim()){
-        
-        console.log('he he');
-
+    
         postsTitle = getSelectorPost('.post-title', true);
-        console.log(postsTitle);
 
         Array.from(postsTitle).every(title => {
             if(title.innerText.toLowerCase().includes(keyWord.toLowerCase())) {
                 getBlogDetails(title);
                 return false;
             } else 
-                console.log('sc')
                 return true;
         })
     }
@@ -122,19 +114,5 @@ searchEl.addEventListener('keydown', event => {
         searchPost();
 })
 
-
-
-
-
-
-
-// let date = new Date();
-let date = new Date('2022-03-05');
-console.log(date);
-console.log(date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' }));
-
-// window.addEventListener('keydown', event => {
-//     console.log(event.key);
-// });
 
 
