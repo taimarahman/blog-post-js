@@ -104,9 +104,9 @@ function searchPost() {
 
 }
 
-
 searchBtn.addEventListener('click', () => {
     searchEl.classList.add('search-input');
+    searchEl.focus();
 });
 
 searchEl.addEventListener('keydown', event => {
