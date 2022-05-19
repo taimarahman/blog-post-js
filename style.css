@@ -40,6 +40,9 @@ h1, h3 {
 
 header {
   border-bottom: 1.5px solid #c6c6c6;
+  height: 15vh;
+  line-height: 15vh;
+  margin: 0;
 }
 
 header nav {
@@ -50,8 +53,6 @@ header nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 80px;
-  padding: 30px 0;
-  line-height: 45px;
 }
 
 header nav a {
@@ -93,7 +94,7 @@ header nav .nav-middle {
 }
 
 .container {
-  height: calc(100vh - 110px);
+  height: calc(100vh - 15vh);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,8 +109,9 @@ header nav .nav-middle {
 }
 
 .container section .main-container {
-  margin: 60px 0;
   width: 100%;
+  height: 70vh;
+  padding: 8vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,7 +191,7 @@ header nav .nav-middle {
 
 .container section .main-container .post-container .post .post-image {
   width: 100%;
-  height: 209px;
+  height: 30vh;
   margin-top: 40px;
 }
 
@@ -201,7 +203,9 @@ header nav .nav-middle {
 }
 
 .container section .social {
-  margin: 60px 0 60px 18%;
+  height: 15vh;
+  line-height: 15vh;
+  margin-left: calc(13% + 60px);
 }
 
 .container section .social a {
@@ -253,7 +257,8 @@ header nav .nav-middle {
 
 .container aside .inquiry {
   font-weight: 600;
-  margin-bottom: 60px;
+  height: 15vh;
+  line-height: 15vh;
 }
 
 .dot {
